@@ -15,3 +15,18 @@ If you find our work useful in your research or publication, please cite our wor
   organization={Springer}
 }
 ```
+
+## Dependencies
+* Python 3.6
+* PyTorch >= 1.3.0
+* numpy
+* lmdb
+
+## Code
+Clone this repository into any place you want.
+```bash
+git clone https://github.com/franciszchen/SWD-Net.git
+cd SWD-Net
+```
+
+## Quickstart 
