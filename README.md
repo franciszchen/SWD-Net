@@ -34,20 +34,8 @@ Train the SWD-Net with HistoSR nearest dataset:
 python ./train_swdnet.py --theme swdnet-nearest-default-bsz24 --job_type S --data_degradation nearest --batch_size 24
 ```
 ## Benchmark
-| Method  | PSNR | SSIM | PSNR | SSIM| 
-| --- | --- | --- | --- | --- | 
-| SWD-Net | 32.769 | 0.9510 | 31.538 | 0.9397 |
+SWD-Net is implemented and evaluated in RGB-channel, without data augmentation and MeanShift.
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style>
 <table class="tg">
 <thead>
   <tr>
