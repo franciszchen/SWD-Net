@@ -22,7 +22,7 @@ Clone this repository into any place you want.
 ```bash
 git clone https://github.com/franciszchen/SWD-Net.git
 cd SWD-Net
-mkdir save
+mkdir save; mkdir HistoSR; mkdir weights
 ```
 
 ## Quickstart 
