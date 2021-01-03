@@ -2,10 +2,12 @@
 
 This repository is an official PyTorch implementation of the paper **"Joint Spatial-Wavelet Dual-Stream Network for Super-Resolution"** [[paper](https://www.researchgate.net/publication/346066209_Joint_Spatial-Wavelet_Dual-Stream_Network_for_Super-Resolution)] from **MICCAI 2020**.
 
-**HistoSR** dataset with bicubic and nearest degradation is public from [here](alink).
-
 <div align=center><img width="500" src=/figs/framework.png></div>
 
+## HistoSR
+**HistoSR** dataset is built by random cropping patches from Camelyon16 dataset. By bicubic and nearest downsampling, HistoSR dataset provides a $2\times$ SR from $96\times 96$ pixels to $192\times 192$ pixels with two kinds of degradation. Specifically, the bicubic degradation kernel is the common choice and retains neighboring information, while the nearest one discards the pixels directly. In this way, the nearest version provides a more difficult case to comprehensively evaluate various SR algorithms. Each version of HistoSR dataset contains 30, 000 SR pairs in training set and 5, 000 SR pairs in test set.
+
+with bicubic and nearest degradation is public from [here](alink).
 
 
 ## Dependencies
