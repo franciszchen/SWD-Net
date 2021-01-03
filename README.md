@@ -8,7 +8,7 @@ This repository is an official PyTorch implementation of the paper **"Joint Spat
 **HistoSR** dataset is built by random cropping patches from Camelyon16 dataset. By bicubic and nearest downsampling, HistoSR dataset provides a 2× SR from 96×96 pixels to 192×192 pixels with two kinds of degradation. Specifically, the bicubic degradation kernel is the common choice and retains neighboring information, while the nearest one discards the pixels directly. In this way, the nearest version provides a more difficult case to comprehensively evaluate various SR algorithms. Each version of HistoSR dataset contains 30,000 SR pairs in training set and 5,000 SR pairs in test set.
 
 ### Download
-The HistoSR data is stored in LMDB files and can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1zXF2IYqyJ6oFAXzcC0fZO6O3M-WHKidu?usp=sharing).
+The HistoSR data is stored in LMDB files and can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1zXF2IYqyJ6oFAXzcC0fZO6O3M-WHKidu?usp=sharing). Put the downloaded ```bicubic``` and ```nearest``` subfolders in a newly-built folder ```./HistoSR/```.
 
 
 ## Dependencies
@@ -61,7 +61,7 @@ SWD-Net is implemented and evaluated in RGB-channel. Data augmentation and stati
 </tbody>
 </table>
 
-The weights of SWD-Net to reproduce the records in the paper can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1n8vsQfu5YW-o6UAO5GIv7ue9kK_sWIxy?usp=sharing). Put the downloaded weight files in ```./weights/```
+The weights of SWD-Net to reproduce the records in the paper can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1n8vsQfu5YW-o6UAO5GIv7ue9kK_sWIxy?usp=sharing). Put the downloaded weight files in a newly-built folder ```./weights/```.
 
 * For the bicubic degradation:
 ```python
