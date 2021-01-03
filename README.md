@@ -34,7 +34,7 @@ Train the SWD-Net with HistoSR nearest dataset:
 python ./train_swdnet.py --theme swdnet-nearest-default-bsz24 --job_type S --data_degradation nearest --batch_size 24
 ```
 ## Benchmark
-SWD-Net is implemented and evaluated in RGB-channel, without data augmentation and statistical MeanShift.
+SWD-Net is implemented and evaluated in RGB-channel. Data augmentation and statistical MeanShift are not employed to optimize SWD-Net.
 
 <table class="tg">
 <thead>
