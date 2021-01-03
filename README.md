@@ -24,6 +24,14 @@ cd SWD-Net
 ```
 
 ## Quickstart 
+Train the SWD-Net with HistoSR bicubic dataset:
+```python
+python ./train_swdnet.py --theme swdnet-bicubic-default-bsz24 --job_type S --data_degradation bicubic --batch_size 24
+```
+Train the SWD-Net with HistoSR nearest dataset:
+```python
+python ./train_swdnet.py --theme swdnet-nearest-default-bsz24 --job_type S --data_degradation nearest --batch_size 24
+```
 
 ## Cite
 If you find our work useful in your research or publication, please cite our work:
