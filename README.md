@@ -4,7 +4,7 @@ This repository is an official PyTorch implementation of the paper **"Joint Spat
 
 **HistoSR** dataset with bicubic and nearest degradation is public from [here](alink).
 
-!<div align=center><img width="150" height="150" src=/figs/framework.png></div>
+<div align=center><img width="500" src=/figs/framework.png></div>
 
 If you find our work useful in your research or publication, please cite our work:
 ```
