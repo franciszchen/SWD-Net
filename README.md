@@ -38,6 +38,48 @@ python ./train_swdnet.py --theme swdnet-nearest-default-bsz24 --job_type S --dat
 | --- | --- | --- | --- | --- | 
 | SWD-Net | 32.769 | 0.9510 | 31.538 | 0.9397 |
 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-9wq8" rowspan="2">Method</th>
+    <th class="tg-9wq8" colspan="2">Bicubic degradation</th>
+    <th class="tg-0pky" colspan="2">Nearest degradation</th>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">PSNR</td>
+    <td class="tg-c3ow">SSIM</td>
+    <td class="tg-c3ow">PSNR</td>
+    <td class="tg-c3ow">SSIM</td>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow">SWD-Net</td>
+    <td class="tg-c3ow">32.769</td>
+    <td class="tg-c3ow">0.9510</td>
+    <td class="tg-c3ow">31.538</td>
+    <td class="tg-c3ow">0.9397</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+</tbody>
+</table>
+
 ## Cite
 If you find our work useful in your research or publication, please cite our work:
 ```
