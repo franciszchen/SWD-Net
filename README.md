@@ -8,9 +8,7 @@ This repository is an official PyTorch implementation of the paper **"Joint Spat
 **HistoSR** dataset is built by random cropping patches from Camelyon16 dataset. By bicubic and nearest downsampling, HistoSR dataset provides a 2× SR from 96×96 pixels to 192×192 pixels with two kinds of degradation. Specifically, the bicubic degradation kernel is the common choice and retains neighboring information, while the nearest one discards the pixels directly. In this way, the nearest version provides a more difficult case to comprehensively evaluate various SR algorithms. Each version of HistoSR dataset contains 30,000 SR pairs in training set and 5,000 SR pairs in test set.
 
 ### Download
-The HistoSR data is stored in LMDB files and can be downloaded using the following links. 
-
-Download all at once from [Google Drive](https://drive.google.com/drive/folders/1zXF2IYqyJ6oFAXzcC0fZO6O3M-WHKidu?usp=sharing).
+The HistoSR data is stored in LMDB files and can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1zXF2IYqyJ6oFAXzcC0fZO6O3M-WHKidu?usp=sharing).
 
 
 ## Dependencies
@@ -27,11 +25,11 @@ cd SWD-Net
 ```
 
 ## Quickstart 
-Train the SWD-Net with HistoSR bicubic dataset:
+* Train the SWD-Net with HistoSR bicubic dataset:
 ```python
 python ./train_swdnet.py --theme swdnet-bicubic-default-bsz24 --job_type S --data_degradation bicubic --batch_size 24
 ```
-Train the SWD-Net with HistoSR nearest dataset:
+* Train the SWD-Net with HistoSR nearest dataset:
 ```python
 python ./train_swdnet.py --theme swdnet-nearest-default-bsz24 --job_type S --data_degradation nearest --batch_size 24
 ```
@@ -62,6 +60,19 @@ SWD-Net is implemented and evaluated in RGB-channel. Data augmentation and stati
   </tr>
 </tbody>
 </table>
+
+The weights of SWD-Net to reproduce the records in the paper can be downloaded from [Google Drive] (https://drive.google.com/drive/folders/1n8vsQfu5YW-o6UAO5GIv7ue9kK_sWIxy?usp=sharing)
+
+* For the bicubic degradation,
+```python
+python ./eval_pth.py --job_type S --data_degradation bicubic --batch_size 24
+```
+
+* For the nearest degradation,
+```python
+python ./eval_pth.py --job_type S --data_degradation nearest --batch_size 24
+```
+
 
 ## Cite
 If you find our work useful in your research or publication, please cite our work:
