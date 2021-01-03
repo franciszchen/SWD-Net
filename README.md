@@ -7,6 +7,7 @@ This repository is an official PyTorch implementation of the paper **"Joint Spat
 ## HistoSR
 **HistoSR** dataset is built by random cropping patches from Camelyon16 dataset. By bicubic and nearest downsampling, HistoSR dataset provides a 2× SR from 96×96 pixels to 192×192 pixels with two kinds of degradation. Specifically, the bicubic degradation kernel is the common choice and retains neighboring information, while the nearest one discards the pixels directly. In this way, the nearest version provides a more difficult case to comprehensively evaluate various SR algorithms. Each version of HistoSR dataset contains 30,000 SR pairs in training set and 5,000 SR pairs in test set.
 
+### Download
 with bicubic and nearest degradation is public from [here](alink).
 
 
@@ -32,6 +33,10 @@ Train the SWD-Net with HistoSR nearest dataset:
 ```python
 python ./train_swdnet.py --theme swdnet-nearest-default-bsz24 --job_type S --data_degradation nearest --batch_size 24
 ```
+## Benchmark
+| Method  | PSNR | SSIM | PSNR | SSIM| 
+| --- | --- | --- | --- | --- | 
+| SWD-Net | 32.769 | 0.9510 | 31.538 | 0.9397 |
 
 ## Cite
 If you find our work useful in your research or publication, please cite our work:
