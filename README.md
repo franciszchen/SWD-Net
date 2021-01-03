@@ -8,9 +8,9 @@ This repository is an official PyTorch implementation of the paper **"Joint Spat
 **HistoSR** dataset is built by random cropping patches from Camelyon16 dataset. By bicubic and nearest downsampling, HistoSR dataset provides a 2× SR from 96×96 pixels to 192×192 pixels with two kinds of degradation. Specifically, the bicubic degradation kernel is the common choice and retains neighboring information, while the nearest one discards the pixels directly. In this way, the nearest version provides a more difficult case to comprehensively evaluate various SR algorithms. Each version of HistoSR dataset contains 30,000 SR pairs in training set and 5,000 SR pairs in test set.
 
 ### Download
-The HistoSR data is stored in LMDB files and can be downloaded using the following links. E
+The HistoSR data is stored in LMDB files and can be downloaded using the following links. 
 
-Download all at once from [Google Drive](alink).
+Download all at once from [Google Drive](https://drive.google.com/drive/folders/1zXF2IYqyJ6oFAXzcC0fZO6O3M-WHKidu?usp=sharing).
 
 
 ## Dependencies
