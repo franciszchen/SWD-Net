@@ -61,14 +61,14 @@ SWD-Net is implemented and evaluated in RGB-channel. Data augmentation and stati
 </tbody>
 </table>
 
-The weights of SWD-Net to reproduce the records in the paper can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1n8vsQfu5YW-o6UAO5GIv7ue9kK_sWIxy?usp=sharing)
+The weights of SWD-Net to reproduce the records in the paper can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1n8vsQfu5YW-o6UAO5GIv7ue9kK_sWIxy?usp=sharing). Put the downloaded weight files in ```./weights/```
 
-* For the bicubic degradation,
+* For the bicubic degradation:
 ```python
 python ./eval_pth.py --job_type S --data_degradation bicubic --batch_size 24
 ```
 
-* For the nearest degradation,
+* For the nearest degradation:
 ```python
 python ./eval_pth.py --job_type S --data_degradation nearest --batch_size 24
 ```
